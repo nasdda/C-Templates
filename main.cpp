@@ -27,6 +27,7 @@ struct debug {
 		return * this << "]";
 	}
 };
+#define imie(...) " [" << #__VA_ARGS__ ": " << (__VA_ARGS__) << "] "
 #define DEBUG(x) do { cerr << #x << ": " << x << " ";} while (0)
 // macros
 #define FASTIO() ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
@@ -38,10 +39,8 @@ struct debug {
 #define sz(x) ((int) x.size())
 #define um unordered_map
 #define us unordered_set
-#define imie(...) " [" << #__VA_ARGS__ ": " << (__VA_ARGS__) << "] "
 // constants
 const long MOD = 1000000007;
-
 
 int main() {
 
