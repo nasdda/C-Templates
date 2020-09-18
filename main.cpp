@@ -2,7 +2,7 @@
 using namespace std;
 
 // macros
-#define FASTIO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+#define FASTIO() ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 #define DEBUG(x) do { cerr << #x << ": " << x << " ";} while (0)
 #define DEBUGV(v) cerr << #v << ": "; for(int __ = 0; __ < v.size()-1; __++) \
 	{cout << v[__] << ", ";} cout << v.back() << endl;
