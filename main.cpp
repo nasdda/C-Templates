@@ -10,6 +10,8 @@ using namespace std;
 #define forn(i, n) for(int i = 0; i < n; i++)
 #define forab(i, a, b) for(int i = a; i < b; i++)
 #define iter(it, target) for(auto it = target.begin(); it != target.end(); it++)
+#define all(x) x.begin(), x.end()
+#define sz(x) (int) x.size()
 #define um unordered_map
 #define us unordered_set
 // constants
