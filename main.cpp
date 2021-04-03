@@ -19,7 +19,7 @@ struct debug {
 	template <class c> debug & operator <<(rge<c> d) { *this << "["; for (auto it = d.b; it != d.e; ++it) *this << ", " + 2 * (it == d.b) << *it; return * this << "]";}
 };
 #define imie(...) " [" << #__VA_ARGS__ ": " << (__VA_ARGS__) << "] "
-#define DEBUG(x) cerr << #x << ": " << x << endl;
+#define dbg(x) debug() << imie(x);
 // macros
 #define FASTIO() ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 #define REP(n) for(int _ = 0; _ < n; _++)
@@ -34,6 +34,10 @@ struct debug {
 // constants
 const long MOD = 1000000007;
 
+struct hash_pair {
+    template <class T1, class T2>
+    size_t operator()(const pair<T1, T2>& p) const{auto hash1 = hash<T1>{}(p.first);auto hash2 = hash<T2>{}(p.second);return hash1 ^ hash2;}
+};
 
 int main() {
 
