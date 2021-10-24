@@ -1,10 +1,20 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <queue>
+#include <deque>
+#include <utility>
+#include <string>
+#include <math.h>
+#include <unordered_set>
+#include <unordered_map>
+#include <climits>
+#include <numeric>
 using namespace std;
-
+ 
 // input
 template<class A> void read(vector<A>& v) {
-for (auto& x : v)
-	cin >> x;
+	for (auto& x : v) cin >> x;
 }
 // debug
 template <class c> struct rge { c b, e; };
@@ -24,8 +34,8 @@ struct debug {
 #define FASTIO() ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 #define REP(n) for(int _ = 0; _ < n; _++)
 #define ALL(x) x.begin(), x.end()
-#define SZ(x) ((int) x.size())
 #define LEN(x) ((int) x.length())
+#define SZ(x) ((int) x.size())
 #define PB push_back
 #define EB emplace_back
 #define UM unordered_map
@@ -33,12 +43,18 @@ struct debug {
 #define LL long long
 // constants
 const long MOD = 1000000007;
-
+ 
 struct hash_pair {
-    template <class T1, class T2>
-    size_t operator()(const pair<T1, T2>& p) const{auto hash1 = hash<T1>{}(p.first);auto hash2 = hash<T2>{}(p.second);return hash1 ^ hash2;}
+	template <class T1, class T2>
+	size_t operator()(const pair<T1, T2>& p) const {auto hash1 = hash<T1> {}(p.first); auto hash2 = hash<T2> {}(p.second); return hash1 ^ hash2;}
 };
+ 
+// template <typename T>
+// void judge(int t, T ans) {
+// 	cout << "Case #" << t << ": " << ans << endl;
+// }
+
 
 int main() {
-
+	
 }
